@@ -150,21 +150,21 @@ function TableView() {
               <th style={{ width: "3%", background: "#cad8fa" }}>#</th>
               <th style={{ width: "14%", background: "#cad8fa" }}>Name</th>
               <th style={{ width: "2%", background: "#cad8fa" }}>Photo</th>
-              <th style={{ width: "6%", background: "#cad8fa" }}>Age</th>
+              <th style={{ width: "4%", background: "#cad8fa" }}>Age</th>
               <th style={{ width: "16%", background: "#cad8fa" }}>Location</th>
               <th style={{ width: "14%", background: "#cad8fa" }}>Phone</th>
               <th style={{ width: "14%", background: "#cad8fa" }}>Email</th>
             </tr>
           </thead>
           {currentProfiles.length > 0 ? (
-            <tbody className="table-body  text-center">
+            <tbody className="table-body  text-start">
               {currentProfiles.map((post, index) => (
                 <tr
                   key={index}
                   style={{ cursor: "pointer" }}
                   onClick={() => handleNameClick(post.id)}
                 >
-                  <td>{index + 1}</td>
+                  <td className="text-center">{index + 1}</td>
                   <td>{post.name}</td>
                   <td>
                     <img
@@ -177,7 +177,7 @@ function TableView() {
                       alt="User"
                     />
                   </td>
-                  <td>{post.age}</td>
+                  <td className="text-center">{post.age}</td>
                   <td>{post.location}</td>
                   <td style={{ minWidth: "8rem" }}>{post.phone}</td>
                   <td>{post.email}</td>
