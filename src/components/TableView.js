@@ -66,8 +66,11 @@ function TableView() {
           }}
         />
 
-        <div className="d-flex gap-5 mt-4 justify-content-between">
-          <div className="d-sm-flex flex-column d-lg-flex flex-lg-row">
+        <div className="d-flex gap-5 mt-4 justify-content-end">
+          <div>
+
+        
+          <div className=" d-md-flex flex-md-row  d-lg-flex flex-lg-row">
             <div>
               {" "}
               <MDBCol md="14">
@@ -88,7 +91,7 @@ function TableView() {
                 </div>
               </MDBCol>
             </div>
-            <div className="mx-lg-5">
+            <div className="mx-lg-5 mx-md-5">
               {" "}
               <MDBCol md="14">
                 <div className="active-pink-3 active-pink-4 mb-4 ">
@@ -109,8 +112,8 @@ function TableView() {
               </MDBCol>
             </div>
           </div>
-
-          <div className="d-flex flex-column ">
+          </div>
+          <div className="d-flex flex-column text-end">
             <label className="text-center ">Age</label>
             <div>
               <input
