@@ -126,7 +126,7 @@ function TableView() {
                     minAge: e.target.value,
                   })
                 }
-                style={{ width: "50px" }}
+                style={{ width: "56px" }}
               />
 
               <input
@@ -140,7 +140,7 @@ function TableView() {
                     maxAge: e.target.value,
                   })
                 }
-                style={{ width: "50px" }}
+                style={{ width: "56px" }}
               />
             </div>
           </div>
