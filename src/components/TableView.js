@@ -46,10 +46,10 @@ function TableView() {
   };
 
   return (
-    <div className="mx-3">
+    <div >
       <div>
         <div
-          className="col-sm mt-1 me-2 d-flex justify-content-between"
+          className="col-sm pt-2 d-flex justify-content-between px-3"
           style={{
             backgroundColor: " rgb(233, 238, 247)",
           }}
@@ -130,7 +130,7 @@ function TableView() {
               />
 
               <input
-                className="mb-2 mx-2"
+                className="mb-2 mx-3"
                 type="number"
                 placeholder="max"
                 value={filteredList.maxAge}
@@ -146,7 +146,7 @@ function TableView() {
           </div>
         </div>
       </div>
-      <div className="table-div">
+      <div className="table-div mx-3">
         <Table className="table-text" striped bordered hover size="sm">
           <thead style={{ height: "3rem" }}>
             <tr className="table-head text-center">

@@ -24,9 +24,9 @@ function UserCard() {
     navigate(-1);
   };
   return (
-    <div className="px-2">
+    <div>
       <div
-        className="col-sm mt-1 me-2 d-flex"
+        className="col-sm pt-2 d-flex px-3"
         style={{
           backgroundColor: " rgb(233, 238, 247)",
         }}
@@ -45,7 +45,7 @@ function UserCard() {
         className="vh-100"
         style={{ backgroundColor: "#f4f5f7", width: "100%" }}
       >
-        <MDBContainer className="py-5">
+        <MDBContainer className="py-5 ">
           <MDBRow className="justify-content-center">
             <MDBCol lg="10" md="12" sm="12" className="mb-4 mb-lg-0">
               <MDBCard className="mb-3" style={{ borderRadius: ".5rem" }}>
